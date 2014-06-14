@@ -1,7 +1,8 @@
 var number = 99,
     subtract = 1,
     drink = "drink",
-    body = document.body;
+    body = document.body,
+    audio = document.getElementById('audio');
 do{
   createDiv(number + " bottles of " + drink + " on the wall!");
   document.title = number + " Bottles of " + drink.toProperCase() + " on the Wall";
@@ -15,4 +16,5 @@ function createDiv(string){
     var div = document.createElement('div');
     div.innerHTML = string;
     body.appendChild(div);
+    audio.src = "http://translate.google.com/translate_tts?tl=en&q=" + encodeURIComponent(string);
   }, 1);
