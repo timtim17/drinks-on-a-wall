@@ -15,5 +15,4 @@ function createDiv(string){
     var div = document.createElement('div');
     div.innerHTML = string;
     body.appendChild(div);
-  }, 5000);
-}
+  }, 1);
